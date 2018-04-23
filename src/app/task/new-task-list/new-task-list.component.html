@@ -1,0 +1,18 @@
+<form>
+  <h2 mat-dialog-title>
+    移动本列表所有内容
+  </h2>
+  <div mat-dialog-content>
+    <mat-input-container class="full-width">
+      <input type="text" matInput placeholder="列表名称">
+    </mat-input-container>
+  </div>
+  <div mat-dialog-actions>
+    <button type="button" mat-raised-button (click)="onClick()" color="primary">
+      保存
+    </button>
+    <button type="button" mat-button mat-dialog-close (click)="onClick()">
+      关闭
+    </button>
+  </div>
+</form>
