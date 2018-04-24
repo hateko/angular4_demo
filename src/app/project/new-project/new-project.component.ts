@@ -1,11 +1,12 @@
-import { Component, OnInit, Inject, Input } from '@angular/core';
+import { Component, OnInit, Inject, Input, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-new-project',
   templateUrl: './new-project.component.html',
-  styleUrls: ['./new-project.component.css']
+  styleUrls: ['./new-project.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewProjectComponent implements OnInit {
   title = '';
